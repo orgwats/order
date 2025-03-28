@@ -37,6 +37,8 @@ func main() {
 		defer wg.Done()
 		log.Printf("start order GRPC server at %s", listener.Addr().String())
 
+		server.Run()
+
 		if err := grpcServer.Serve(listener); err != nil {
 			log.Fatal("order server failed to serve:", err)
 		}
