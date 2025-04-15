@@ -38,7 +38,7 @@ func (s *Server) Run() {
 	}
 
 	// s.cfg.~~~
-	addr := "localhost:9092"
+	addr := "34.132.215.86:9092"
 	consumer, err := kafka.NewConsumer(addr)
 	if err != nil {
 		log.Fatal("cannot create kafka consumer:", err)
@@ -52,7 +52,7 @@ func (s *Server) Run() {
 	}
 
 	// s.cfg.~~~
-	addr = "localhost:9092"
+	addr = "34.132.215.86:9092"
 	producer, err := kafka.NewProducer(addr)
 	if err != nil {
 		log.Fatal("cannot create kafka producer:", err)
