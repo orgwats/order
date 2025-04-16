@@ -9,5 +9,5 @@ FROM alpine:3.21
 WORKDIR /app
 COPY --from=builder /app/main .
 
-EXPOSE 50052
+EXPOSE 50053
 CMD [ "/app/main" ]
