@@ -30,8 +30,8 @@ func (s *Server) Run() {
 	futures.UseTestnet = true
 
 	// s.cfg.~~~
-	apiKey := ""
-	secretKey := ""
+	apiKey := "2221716f0804e8f11ee0e2748f130f451226a4e866e5a6e5cf5ae44c1a9480a3"
+	secretKey := "badc08043427c2049bba0752a8ae23dfbee99f3c5448bf34d8aae33217a0ffca"
 	orderPlaceService, err := futures.NewOrderPlaceWsService(apiKey, secretKey)
 	if err != nil {
 		log.Fatal("cannot connect binance websocket:", err)
